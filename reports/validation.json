@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "device": "CPU",
+  "passed": true,
+  "checks": [
+    {
+      "name": "circular_aperture_first_dark_ring",
+      "measured": 0.025411994040004833,
+      "expected": 0.02540978940138551,
+      "error": 8.676335661414748e-05,
+      "tolerance": 0.006,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "single_slit_first_zero_width_12",
+      "measured": 0.08333399699378093,
+      "expected": 0.08333333333333333,
+      "error": 7.963925371168301e-06,
+      "tolerance": 0.003,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "single_slit_first_zero_width_24",
+      "measured": 0.04166796116377136,
+      "expected": 0.041666666666666664,
+      "error": 3.106793051271817e-05,
+      "tolerance": 0.003,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "single_slit_first_zero_width_40",
+      "measured": 0.025001562046888512,
+      "expected": 0.025,
+      "error": 6.248187554042106e-05,
+      "tolerance": 0.003,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "double_slit_analytic_modulation_spacing_32",
+      "measured": 1.4432899320127035e-15,
+      "expected": 0.0,
+      "error": 1.4432899320127035e-15,
+      "tolerance": 1e-11,
+      "error_unit": "absolute max error",
+      "passed": true
+    },
+    {
+      "name": "double_slit_fringe_period_spacing_32",
+      "measured": 0.03125,
+      "expected": 0.03125,
+      "error": 0.0,
+      "tolerance": 0.01,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "double_slit_analytic_modulation_spacing_64",
+      "measured": 2.3314683517128287e-15,
+      "expected": 0.0,
+      "error": 2.3314683517128287e-15,
+      "tolerance": 1e-11,
+      "error_unit": "absolute max error",
+      "passed": true
+    },
+    {
+      "name": "double_slit_fringe_period_spacing_64",
+      "measured": 0.015625,
+      "expected": 0.015625,
+      "error": 0.0,
+      "tolerance": 0.01,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "physical_parseval_energy",
+      "measured": 1783.5371093749995,
+      "expected": 1783.537109375,
+      "error": 2.5496937994512486e-16,
+      "tolerance": 1e-12,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "integer_shift_intensity_invariance",
+      "measured": 1.1375826155764494e-15,
+      "expected": 0.0,
+      "error": 1.1375826155764494e-15,
+      "tolerance": 1e-12,
+      "error_unit": "relative to peak",
+      "passed": true
+    },
+    {
+      "name": "real_amplitude_centrosymmetry",
+      "measured": 4.481281003322027e-16,
+      "expected": 0.0,
+      "error": 4.481281003322027e-16,
+      "tolerance": 1e-12,
+      "error_unit": "relative to peak",
+      "passed": true
+    },
+    {
+      "name": "babinet_nonzero_native_frequency_bins",
+      "measured": 5.601601254152534e-17,
+      "expected": 0.0,
+      "error": 5.601601254152534e-17,
+      "tolerance": 1e-12,
+      "error_unit": "relative to aperture peak",
+      "passed": true
+    },
+    {
+      "name": "4f_open_mask_identity",
+      "measured": 4.5575668157844425e-16,
+      "expected": 0.0,
+      "error": 4.5575668157844425e-16,
+      "tolerance": 1e-12,
+      "error_unit": "absolute amplitude error",
+      "passed": true
+    },
+    {
+      "name": "4f_closed_mask_zero",
+      "measured": 0.0,
+      "expected": 0.0,
+      "error": 0.0,
+      "tolerance": 1e-24,
+      "error_unit": "absolute intensity error",
+      "passed": true
+    },
+    {
+      "name": "4f_transmitted_energy",
+      "measured": 1461.8366959822501,
+      "expected": 1461.8366959822506,
+      "error": 3.110794469288556e-16,
+      "tolerance": 1e-12,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "grid_vertical_slit_orientation",
+      "measured": 5.552849575635887e-16,
+      "expected": 0.0,
+      "error": 5.552849575635887e-16,
+      "tolerance": 1e-12,
+      "error_unit": "absolute amplitude error",
+      "passed": true
+    },
+    {
+      "name": "grid_horizontal_slit_orientation",
+      "measured": 4.441091862881935e-16,
+      "expected": 0.0,
+      "error": 4.441091862881935e-16,
+      "tolerance": 1e-12,
+      "error_unit": "absolute amplitude error",
+      "passed": true
+    },
+    {
+      "name": "circle_first_zero_refined_grid",
+      "measured": 0.025412160611205145,
+      "expected": 0.02540978940138551,
+      "error": 9.331875137483849e-05,
+      "tolerance": 0.006,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "circle_first_zero_resolution_agreement",
+      "measured": 0.025411994040004833,
+      "expected": 0.025412160611205145,
+      "error": 6.554783076518774e-06,
+      "tolerance": 0.003,
+      "error_unit": "relative error",
+      "passed": true
+    },
+    {
+      "name": "padding_common_frequency_agreement",
+      "measured": 4.481281003322027e-16,
+      "expected": 0.0,
+      "error": 4.481281003322027e-16,
+      "tolerance": 1e-12,
+      "error_unit": "relative to peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_01_linear",
+      "measured": 0.0015083932995563327,
+      "expected": 0.0,
+      "error": 0.0015083932995563327,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_01_log",
+      "measured": 0.0013506732076843542,
+      "expected": 0.0,
+      "error": 0.0013506732076843542,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_02_linear",
+      "measured": 0.0015083932995563403,
+      "expected": 0.0,
+      "error": 0.0015083932995563403,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_02_log",
+      "measured": 0.0013506732076844204,
+      "expected": 0.0,
+      "error": 0.0013506732076844204,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_03_linear",
+      "measured": 0.0012062970638644056,
+      "expected": 0.0,
+      "error": 0.0012062970638644056,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_03_log",
+      "measured": 0.0010770048888618352,
+      "expected": 0.0,
+      "error": 0.0010770048888618352,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_04_linear",
+      "measured": 0.0012062970638643986,
+      "expected": 0.0,
+      "error": 0.0012062970638643986,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_04_log",
+      "measured": 0.0010770048888617712,
+      "expected": 0.0,
+      "error": 0.0010770048888617712,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_05_linear",
+      "measured": 0.00377934463732984,
+      "expected": 0.0,
+      "error": 0.00377934463732984,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_05_log",
+      "measured": 0.009311918677485306,
+      "expected": 0.0,
+      "error": 0.009311918677485306,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_06_linear",
+      "measured": 0.002119025003524254,
+      "expected": 0.0,
+      "error": 0.002119025003524254,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_06_log",
+      "measured": 0.011293658346031936,
+      "expected": 0.0,
+      "error": 0.011293658346031936,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_07_linear",
+      "measured": 0.009476985408906697,
+      "expected": 0.0,
+      "error": 0.009476985408906697,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_07_log",
+      "measured": 0.012884560553559776,
+      "expected": 0.0,
+      "error": 0.012884560553559776,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_08_linear",
+      "measured": 0.002815748324567022,
+      "expected": 0.0,
+      "error": 0.002815748324567022,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_08_log",
+      "measured": 0.0015214507607123327,
+      "expected": 0.0,
+      "error": 0.0015214507607123327,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_09_linear",
+      "measured": 0.005083353424184082,
+      "expected": 0.0,
+      "error": 0.005083353424184082,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_09_log",
+      "measured": 0.0033235671146115966,
+      "expected": 0.0,
+      "error": 0.0033235671146115966,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_10_linear",
+      "measured": 0.0008674371580358857,
+      "expected": 0.0,
+      "error": 0.0008674371580358857,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_10_log",
+      "measured": 0.007821942027092788,
+      "expected": 0.0,
+      "error": 0.007821942027092788,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_11_linear",
+      "measured": 0.0010615015137667467,
+      "expected": 0.0,
+      "error": 0.0010615015137667467,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_11_log",
+      "measured": 0.012636356928004149,
+      "expected": 0.0,
+      "error": 0.012636356928004149,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_12_linear",
+      "measured": 0.0028395612888158493,
+      "expected": 0.0,
+      "error": 0.0028395612888158493,
+      "tolerance": 0.01,
+      "error_unit": "RMS / reference peak",
+      "passed": true
+    },
+    {
+      "name": "4f_padding_convergence_12_log",
+      "measured": 0.023013944030772112,
+      "expected": 0.0,
+      "error": 0.023013944030772112,
+      "tolerance": 0.03,
+      "error_unit": "RMS / display range",
+      "passed": true
+    }
+  ]
+}

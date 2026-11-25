@@ -1,0 +1,31 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "pillow": "13.0.0",
+  "device": "CPU",
+  "seed": 20261114,
+  "source_sha256": {
+    "fourierbench\\__init__.py": "1cdd60511ba73b914009742f7a00c7670de8c8bdfdf6dcd3c9e03721c12b1f83",
+    "fourierbench\\__main__.py": "c19f56f1541ae586dfbff56f472bb59d293cf225e2e08353a5a15ae5c84692c2",
+    "fourierbench\\items.py": "1de4a415194cc13d25c7a65d0d9d562e7d36d9bf14955d7cbfa12fa6238ec00e",
+    "fourierbench\\optics.py": "3fb091676da9384b13fa1f255dacfc54ebf528bbf04d06ff817387cb9b1a7c27",
+    "fourierbench\\render.py": "d869a6b6d102a233dd2c5c3370c2f2d611d4460b5d6c1c7f85e2d9807dd251bb",
+    "fourierbench\\validate.py": "547f581237db594c9d63ae50eea33281a62a2d25950ea4c1709d4e864979a746",
+    "requirements.txt": "172e9ac1e2fee27cbad9a1ac0d62b903960e8c86e287f1c8f9851def49c70afd",
+    "run.cmd": "f4b4d96aed1b06d0c1892e42e20cf29f506196e7882417095366270d27337e9f"
+  },
+  "validation_sha256": "6e8a12e528bd02d673a0faa507dfe99b650f20a8367855960cdc709bcc1ba03f",
+  "grid": {
+    "source_n": 192,
+    "dx": 1,
+    "padding": 4,
+    "aperture_supersample": 4
+  },
+  "font_sha256": {
+    "C:\\Windows\\Fonts\\arial.ttf": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "C:\\Windows\\Fonts\\arialbd.ttf": "e8f4e3baf6cc35fed6fcce3a540e8b39e8f6cda1d22a28f2ec8f526fef7a43f5"
+  },
+  "command": ".\\run.cmd gate1",
+  "validation_passed": true,
+  "audit_passed": true
+}

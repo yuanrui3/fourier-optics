@@ -1,0 +1,5487 @@
+{
+  "date": "2026-11-18",
+  "purpose": "Research alongside pending Gate 1; no model evaluation.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pillow": "13.0.0"
+  },
+  "homometry": {
+    "positions": [
+      [
+        0,
+        1,
+        4,
+        10,
+        12,
+        17
+      ],
+      [
+        0,
+        1,
+        8,
+        11,
+        13,
+        17
+      ]
+    ],
+    "positive_difference_multiset": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      16,
+      17
+    ],
+    "translation_or_reflection_equivalent": false,
+    "max_intensity_error_over_peak": 7.984589974412533e-16,
+    "log_display_rms": 4.1773271806685115e-17,
+    "known_amplitude_ramp_coded_log_rms": 0.06069302657890298,
+    "coded_mask": "0.6 + 0.4*x/96 at fixed laboratory coordinates; breaks this example only, not a universal guarantee.",
+    "quantized_displays_identical": true
+  },
+  "filtering": {
+    "opposite_off_axis_masks": {
+      "conjugate_field_relative_max_error": 5.077994313111354e-16,
+      "intensity_relative_max_error": 8.35091690310507e-16
+    },
+    "binary_mask_projection": {
+      "idempotence_relative_error": 9.334065615604788e-16,
+      "complementary_energy_relative_error": 1.255567676521389e-15,
+      "pointwise_intensity_addition_rms_error": 0.02662171606563246
+    },
+    "periodic_grid_formula_max_errors": {
+      "pinhole": 3.3306690738754696e-16,
+      "vertical_slit": 9.992007221626409e-16,
+      "horizontal_slit": 7.771561172376096e-16,
+      "off_axis_hole": 1.3877787807814457e-17,
+      "both_x_orders": 1.8388068845354155e-16,
+      "blocked_centre": 5.551115123125783e-16
+    },
+    "dc_vs_one_order_own_peak_normalized_rms": 6.751321501540612e-17,
+    "dc_to_one_order_physical_intensity_ratio": 18.90359168241966
+  },
+  "babinet": {
+    "shape": "circle radius 25; finite 192 by 192 illumination",
+    "identity_relative_max_error": 9.818460140690367e-17,
+    "non_dc_native_max_difference_over_original_peak": 0.0,
+    "all_padded_non_dc_max_difference_over_original_peak": 251.88208714044183,
+    "normalization": "Both differences use the same ORIGINAL physical peak; no separate normalization."
+  },
+  "item_diagnostics": {
+    "registered_reference_nearest_option": {
+      "correct": 10,
+      "applicable": 30,
+      "records": [
+        {
+          "id": "dev-f3-001",
+          "family": 3,
+          "chosen": "C",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "scale",
+            "factor": 1.5
+          }
+        },
+        {
+          "id": "dev-f3-002",
+          "family": 3,
+          "chosen": "A",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "scale",
+            "factor": 0.7
+          }
+        },
+        {
+          "id": "dev-f3-003",
+          "family": 3,
+          "chosen": "A",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "scale",
+            "factor": 1.4
+          }
+        },
+        {
+          "id": "dev-f3-004",
+          "family": 3,
+          "chosen": "A",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "scale",
+            "factor": 0.75
+          }
+        },
+        {
+          "id": "dev-f3-005",
+          "family": 3,
+          "chosen": "D",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "rotation",
+            "clockwise_degrees": 30
+          }
+        },
+        {
+          "id": "dev-f3-006",
+          "family": 3,
+          "chosen": "A",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "rotation",
+            "clockwise_degrees": 45
+          }
+        },
+        {
+          "id": "dev-f3-007",
+          "family": 3,
+          "chosen": "D",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "rotation",
+            "clockwise_degrees": 60
+          }
+        },
+        {
+          "id": "dev-f3-008",
+          "family": 3,
+          "chosen": "D",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": {
+            "type": "rotation",
+            "clockwise_degrees": 90
+          }
+        },
+        {
+          "id": "dev-f3-009",
+          "family": 3,
+          "chosen": "B",
+          "correct": true,
+          "min_rms": 5.126947404247831e-17,
+          "concept": {
+            "type": "translation",
+            "x": 12,
+            "y": 8
+          }
+        },
+        {
+          "id": "dev-f3-010",
+          "family": 3,
+          "chosen": "A",
+          "correct": true,
+          "min_rms": 6.167626956383292e-17,
+          "concept": {
+            "type": "translation",
+            "x": 15,
+            "y": 4
+          }
+        },
+        {
+          "id": "dev-f3-011",
+          "family": 3,
+          "chosen": "C",
+          "correct": true,
+          "min_rms": 4.4718979880402204e-17,
+          "concept": {
+            "type": "translation",
+            "x": 18,
+            "y": 0
+          }
+        },
+        {
+          "id": "dev-f3-012",
+          "family": 3,
+          "chosen": "A",
+          "correct": true,
+          "min_rms": 4.232492052362868e-17,
+          "concept": {
+            "type": "translation",
+            "x": 21,
+            "y": -4
+          }
+        },
+        {
+          "id": "dev-f4-001",
+          "family": 4,
+          "chosen": "B",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "spacing_vs_fringe_period"
+        },
+        {
+          "id": "dev-f4-002",
+          "family": 4,
+          "chosen": "B",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "spacing_vs_fringe_period"
+        },
+        {
+          "id": "dev-f4-003",
+          "family": 4,
+          "chosen": "C",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "spacing_vs_fringe_period"
+        },
+        {
+          "id": "dev-f4-004",
+          "family": 4,
+          "chosen": "C",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "spacing_vs_fringe_period"
+        },
+        {
+          "id": "dev-f4-005",
+          "family": 4,
+          "chosen": "C",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "count_vs_fringe_sharpness"
+        },
+        {
+          "id": "dev-f4-006",
+          "family": 4,
+          "chosen": "D",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "count_vs_fringe_sharpness"
+        },
+        {
+          "id": "dev-f4-007",
+          "family": 4,
+          "chosen": "D",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "count_vs_fringe_sharpness"
+        },
+        {
+          "id": "dev-f4-008",
+          "family": 4,
+          "chosen": "B",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "count_vs_fringe_sharpness"
+        },
+        {
+          "id": "dev-f4-009",
+          "family": 4,
+          "chosen": "C",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "width_vs_envelope"
+        },
+        {
+          "id": "dev-f4-010",
+          "family": 4,
+          "chosen": "C",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "width_vs_envelope"
+        },
+        {
+          "id": "dev-f4-011",
+          "family": 4,
+          "chosen": "A",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "width_vs_envelope"
+        },
+        {
+          "id": "dev-f4-012",
+          "family": 4,
+          "chosen": "D",
+          "correct": false,
+          "min_rms": 0.0,
+          "concept": "width_vs_envelope"
+        },
+        {
+          "id": "dev-f6-007",
+          "family": 6,
+          "chosen": "C",
+          "correct": true,
+          "min_rms": 1.1369161064034163e-16,
+          "concept": "babinet_native_bins"
+        },
+        {
+          "id": "dev-f6-008",
+          "family": 6,
+          "chosen": "B",
+          "correct": true,
+          "min_rms": 1.0512649666105198e-16,
+          "concept": "babinet_native_bins"
+        },
+        {
+          "id": "dev-f6-009",
+          "family": 6,
+          "chosen": "B",
+          "correct": true,
+          "min_rms": 4.742213852060046e-17,
+          "concept": "babinet_native_bins"
+        },
+        {
+          "id": "dev-f6-010",
+          "family": 6,
+          "chosen": "A",
+          "correct": true,
+          "min_rms": 1.1493163680750533e-16,
+          "concept": "babinet_native_bins"
+        },
+        {
+          "id": "dev-f6-011",
+          "family": 6,
+          "chosen": "C",
+          "correct": true,
+          "min_rms": 1.198308037438096e-16,
+          "concept": "babinet_native_bins"
+        },
+        {
+          "id": "dev-f6-012",
+          "family": 6,
+          "chosen": "A",
+          "correct": true,
+          "min_rms": 7.511936229011159e-17,
+          "concept": "babinet_native_bins"
+        }
+      ],
+      "limitation": "Panel boundaries and registration are supplied; this is NOT a blind screenshot or VLM baseline."
+    },
+    "family1_foils_violating_dc_maximum": [
+      "dev-f1-005",
+      "dev-f1-006",
+      "dev-f1-007",
+      "dev-f1-008",
+      "dev-f1-009",
+      "dev-f1-010",
+      "dev-f1-011"
+    ],
+    "raster_margin_summary": [
+      {
+        "mode": "log",
+        "side_pixels": 240,
+        "family": 1,
+        "minimum_rms": 0.09510373694271455,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 240,
+        "family": 2,
+        "minimum_rms": 0.11780203345730525,
+        "worst_item": "dev-f2-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 240,
+        "family": 3,
+        "minimum_rms": 0.10592137483961013,
+        "worst_item": "dev-f3-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 240,
+        "family": 4,
+        "minimum_rms": 0.06594791484451724,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 240,
+        "family": 5,
+        "minimum_rms": 0.11428743059797335,
+        "worst_item": "dev-f5-010",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 240,
+        "family": 6,
+        "minimum_rms": 0.07933293614347503,
+        "worst_item": "dev-f6-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 120,
+        "family": 1,
+        "minimum_rms": 0.09401066223365385,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 120,
+        "family": 2,
+        "minimum_rms": 0.1126353164487616,
+        "worst_item": "dev-f2-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 120,
+        "family": 3,
+        "minimum_rms": 0.1034077402815613,
+        "worst_item": "dev-f3-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 120,
+        "family": 4,
+        "minimum_rms": 0.061339782227871134,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 120,
+        "family": 5,
+        "minimum_rms": 0.11133196044586688,
+        "worst_item": "dev-f5-010",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 120,
+        "family": 6,
+        "minimum_rms": 0.07750963003727683,
+        "worst_item": "dev-f6-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 60,
+        "family": 1,
+        "minimum_rms": 0.09105248439650819,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 60,
+        "family": 2,
+        "minimum_rms": 0.10350141151032599,
+        "worst_item": "dev-f2-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 60,
+        "family": 3,
+        "minimum_rms": 0.09678630785755107,
+        "worst_item": "dev-f3-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 60,
+        "family": 4,
+        "minimum_rms": 0.050027930171629785,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 60,
+        "family": 5,
+        "minimum_rms": 0.1093112586061616,
+        "worst_item": "dev-f5-010",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 60,
+        "family": 6,
+        "minimum_rms": 0.07200203029209624,
+        "worst_item": "dev-f6-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 30,
+        "family": 1,
+        "minimum_rms": 0.0811114007778978,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 30,
+        "family": 2,
+        "minimum_rms": 0.08809390754060686,
+        "worst_item": "dev-f2-001",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 30,
+        "family": 3,
+        "minimum_rms": 0.08222575509103268,
+        "worst_item": "dev-f3-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 30,
+        "family": 4,
+        "minimum_rms": 0.030828340912918428,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 30,
+        "family": 5,
+        "minimum_rms": 0.10544791046946358,
+        "worst_item": "dev-f5-010",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "log",
+        "side_pixels": 30,
+        "family": 6,
+        "minimum_rms": 0.057513963111914417,
+        "worst_item": "dev-f6-005",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 240,
+        "family": 1,
+        "minimum_rms": 0.00783753544504132,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 1,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 240,
+        "family": 2,
+        "minimum_rms": 0.11780203345730525,
+        "worst_item": "dev-f2-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 240,
+        "family": 3,
+        "minimum_rms": 0.027316234809748173,
+        "worst_item": "dev-f3-004",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 240,
+        "family": 4,
+        "minimum_rms": 0.014451577512989781,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 2,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 240,
+        "family": 5,
+        "minimum_rms": 0.04272171863680695,
+        "worst_item": "dev-f5-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 240,
+        "family": 6,
+        "minimum_rms": 0.006522658057585644,
+        "worst_item": "dev-f6-012",
+        "items_below_diagnostic_0_02": 6,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 120,
+        "family": 1,
+        "minimum_rms": 0.007780386227069214,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 1,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 120,
+        "family": 2,
+        "minimum_rms": 0.1126353164487616,
+        "worst_item": "dev-f2-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 120,
+        "family": 3,
+        "minimum_rms": 0.027223163759031548,
+        "worst_item": "dev-f3-004",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 120,
+        "family": 4,
+        "minimum_rms": 0.014164546282730594,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 2,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 120,
+        "family": 5,
+        "minimum_rms": 0.042028811958521914,
+        "worst_item": "dev-f5-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 120,
+        "family": 6,
+        "minimum_rms": 0.006363576723735545,
+        "worst_item": "dev-f6-012",
+        "items_below_diagnostic_0_02": 6,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 60,
+        "family": 1,
+        "minimum_rms": 0.007577754213603277,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 1,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 60,
+        "family": 2,
+        "minimum_rms": 0.10350141151032599,
+        "worst_item": "dev-f2-003",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 60,
+        "family": 3,
+        "minimum_rms": 0.02677059078048226,
+        "worst_item": "dev-f3-004",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 60,
+        "family": 4,
+        "minimum_rms": 0.013073365930360611,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 3,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 60,
+        "family": 5,
+        "minimum_rms": 0.04043623459605335,
+        "worst_item": "dev-f5-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 60,
+        "family": 6,
+        "minimum_rms": 0.006107177791196501,
+        "worst_item": "dev-f6-012",
+        "items_below_diagnostic_0_02": 6,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 30,
+        "family": 1,
+        "minimum_rms": 0.007009023068472947,
+        "worst_item": "dev-f1-001",
+        "items_below_diagnostic_0_02": 1,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 30,
+        "family": 2,
+        "minimum_rms": 0.08809390754060686,
+        "worst_item": "dev-f2-001",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 30,
+        "family": 3,
+        "minimum_rms": 0.025318003955228926,
+        "worst_item": "dev-f3-004",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 30,
+        "family": 4,
+        "minimum_rms": 0.010186856899147199,
+        "worst_item": "dev-f4-005",
+        "items_below_diagnostic_0_02": 4,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 30,
+        "family": 5,
+        "minimum_rms": 0.034816423542415265,
+        "worst_item": "dev-f5-012",
+        "items_below_diagnostic_0_02": 0,
+        "exact_collisions": 0
+      },
+      {
+        "mode": "linear",
+        "side_pixels": 30,
+        "family": 6,
+        "minimum_rms": 0.005593488338649586,
+        "worst_item": "dev-f6-012",
+        "items_below_diagnostic_0_02": 9,
+        "exact_collisions": 0
+      }
+    ],
+    "raster_margin_items": [
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.09510373694271455,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.09401066223365385,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.09105248439650819,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0811114007778978,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.00783753544504132,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.007780386227069214,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.007577754213603277,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-001",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.007009023068472947,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13000032449674764,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.12174765439005783,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1089359759781768,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08809390754060686,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13000032449674764,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.12174765439005783,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1089359759781768,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-001",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08809390754060686,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13697266344106032,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.13584829352418248,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.13251125849561524,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12190332729470203,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.034094635924327196,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03390227957879927,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03280329583584627,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-002",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.02957918941289743,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1565691185671328,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.14692832990236948,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1381064310755036,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.11415170676655306,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1565691185671328,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.14692832990236948,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1381064310755036,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-002",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.11415170676655306,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.16420101144068602,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.160675151582126,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1518477476838372,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.13233220203849136,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.062164181750902145,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06188142997674269,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.06098252873685228,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-003",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.05822718780460395,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11780203345730525,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1126353164487616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10350141151032599,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0897798485492109,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11780203345730525,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1126353164487616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10350141151032599,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-003",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0897798485492109,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11106016349254111,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11061791733805286,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10912744858272318,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10474120804627406,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03997977363046108,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03986859797979098,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03963598301490531,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-004",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03876715168884882,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1530210472761158,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1449715561891079,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.13131525756257612,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.106810024771893,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1530210472761158,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1449715561891079,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.13131525756257612,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-004",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.106810024771893,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.16967487844978418,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1657634793245804,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1563875563925661,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.13513570973388833,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.039132424546158395,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03884766035567101,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03753358670772273,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-005",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03354259573387152,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.20443796951199616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.20011667054939253,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1924322645188941,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1752073888767431,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.20443796951199616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.20011667054939253,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1924322645188941,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-005",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1752073888767431,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17210452874754015,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1688494289329666,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.16016379543674764,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14050165518446123,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06401449256739601,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06336015606621755,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.061070204057069685,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-006",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.050791337070387826,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15920244563385563,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.15576250514037038,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.14909790398121672,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1381697491357329,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15920244563385563,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.15576250514037038,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.14909790398121672,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-006",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1381697491357329,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1989394089406717,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.19480138326674323,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.18453216787083654,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1617656433590053,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06036984678663956,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.05948086787040088,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.05645632687262703,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-007",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04701123228955367,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1814557749345019,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1774273326483609,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17012357521178018,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15280536956814747,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1814557749345019,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1774273326483609,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17012357521178018,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-007",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15280536956814747,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.19694872220911372,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.19303581047948679,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1812558065080484,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14939174952712758,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.05404457400051374,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.0532903838340887,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.050809416663992815,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-008",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04354079420946869,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15926649626732312,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.15543655853816774,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.14900363978202,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.13472508290759413,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15926649626732312,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.15543655853816774,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.14900363978202,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-008",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.13472508290759413,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.18238101767481024,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17945942971961376,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17185825538145397,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15665874534496382,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06003998197963017,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.05952421284717168,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.05769405847164544,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-009",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.05176454083290516,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.21573802483743723,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.2103046246695923,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.19817619672103742,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.17122012535201153,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.21573802483743723,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.2103046246695923,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.19817619672103742,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-009",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.17122012535201153,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.18714266218376616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1847506207700529,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1805785718627833,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.16922541796780127,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06523202442475243,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06443957212885064,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.06165886425349746,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-010",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.05335799762898165,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13911013423929808,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.13504609658809966,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.12871219443935436,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.11371767684075487,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13911013423929808,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.13504609658809966,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.12871219443935436,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-010",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.11371767684075487,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.19523327045447222,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1927539492911112,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.18473119411743832,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.16228072446877606,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03572817693634352,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.035213203060572684,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03337930957177774,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-011",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.025580199741632604,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1947276210091148,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.18895273362975581,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17644002398110983,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15597466471014096,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1947276210091148,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.18895273362975581,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17644002398110983,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-011",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15597466471014096,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15532082065318217,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1525016448327871,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1446160220721621,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.13082544681802566,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.0568339152931525,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.056424112062662464,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.054803210287650644,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f1-012",
+        "family": 1,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04962863497734158,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.21609741402191876,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.20279216319916296,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1830360620439145,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15880324785105865,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.21609741402191876,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.20279216319916296,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1830360620439145,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f2-012",
+        "family": 2,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15880324785105865,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13084471483165191,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.12857203875111436,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.12264879598358056,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10825613136544972,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.0415973632281713,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.04143587240621541,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.04066924860969065,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-001",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03836328502398619,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11845828586371192,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11599465010694433,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10941244797187892,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.09481387366571217,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03453836753012435,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03438011007691584,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03373270936566282,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-002",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03177788263238092,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11001941219746615,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1073920154513312,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10054556633851955,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08572592472885981,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03042592912397161,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.030242445232050393,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.029641946049669497,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-003",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.027804447020671644,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.10987344855680929,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.10763254343762423,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10137731075233394,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08616025312069484,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.027316234809748173,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.027223163759031548,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.02677059078048226,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-004",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.025318003955228926,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.14010160196320318,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.13783925560967974,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.13180259985245113,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.11624289121030626,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03853876898022967,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03825128150200687,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03723649356003352,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-005",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03377915373874451,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.14891807973584517,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1468921713672002,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.14152459499050735,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12819144713524996,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.045840876431240705,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.04550318864491867,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.04415384619964472,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-006",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.039826184786647255,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15811706936720124,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1565656602581231,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.15211259547423917,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14064752033922506,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.04621822072186316,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.04593362496598898,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.04484003111941234,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-007",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04110544761845903,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.12770168174409444,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1258677301995026,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.12106344892439892,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10759837544178016,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.052644845135480414,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.05225262311756699,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.050978925737247195,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-008",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0465124417390977,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11986300197023868,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11697054947757245,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10952317829479091,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0940922260513021,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03400502676100805,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03381512951804664,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03309029687759786,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-009",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.030847457547553338,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.121420470282461,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11908342928201872,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1127052311820639,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.09791713532053598,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03413246163097597,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03397325642566072,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.033389866196120256,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-010",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03163479715918043,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11316304200669937,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11075002843487414,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10429334985367134,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08963660908490217,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.031353952651541936,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03118705373872654,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.030615595829875393,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-011",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.028883860799234776,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.10592137483961013,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1034077402815613,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.09678630785755107,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08222575509103268,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.029031795783054752,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.028876631386510258,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.028321551854682565,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f3-012",
+        "family": 3,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.026614070904901907,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.09472391059456498,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.09403005750903426,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.09245691199605845,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08917073731816737,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.031065400558821805,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.030912355312493874,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.030378379054266776,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-001",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.028427390600878205,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.09028120686712013,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.08964195848535539,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.08800099611473552,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.08461808570300144,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03088400417482703,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.030748681902853476,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.030162885301432577,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-002",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.028227425676813682,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.08282516628377296,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.08217683993369095,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.08057885224385855,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.07193985555215765,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.027434840026212524,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.0272768167878262,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.02675167470682545,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-003",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.024864105857486052,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.08131774606773841,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.08056409293343209,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07886175489520258,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.07529774864157047,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.030928718177439054,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03080243489240668,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.030091066020684305,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-004",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.028105487141306163,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06594791484451724,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.061339782227871134,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.050027930171629785,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.030828340912918428,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.014451577512989781,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.014164546282730594,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.013073365930360611,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-005",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.010186856899147199,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07246744000108006,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06781319783422751,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.0569190991128703,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04217302218537068,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.02139828630618316,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.02089914633591921,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.019341436387173366,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-006",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.016017206349010837,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07241191300195364,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06755920062658571,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.05439012111490718,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.031703591118001695,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.016105898412978374,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.015702469853041207,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.014532015032028774,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-007",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.012286190993473651,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07715520520984671,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.07108211995537692,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.05860974222679034,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.043567668521006186,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.02247921847752377,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.02187207319782941,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.020030413886293882,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-008",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.017311256754096567,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06901654598390183,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06840931719414854,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.06695347124472124,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.06329997030279647,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.028545218502191598,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.028444629168469772,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.027895559598084298,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-009",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.026062946899314918,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07065402556204184,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.07004812580709853,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.0687805016047398,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.06644510150774709,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.031057221823315592,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.030911370673961644,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03032503657272741,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-010",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.02842348324167714,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.06641693582151964,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.06577239663608882,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.06432989727068605,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.06191002029568468,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.028342787960490372,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.028182840559977877,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.02769229445683698,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-011",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0258003586682759,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.08370404216768979,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.08300537799614328,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.0811416520951413,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0725034302970852,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.02735853852194623,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.02717960319840304,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.026658335235740373,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f4-012",
+        "family": 4,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.02479494270304562,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17417742621258916,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17239971444417523,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1666985359764938,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15120488078262956,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17873188904204126,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17670225957411032,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.16994777475637987,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-001",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14319436590080523,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17417742621258916,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17239971444417523,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1666985359764938,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15120488078262956,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17873188904204126,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17670225957411032,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.16994777475637987,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-002",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14319436590080523,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.16700541715019926,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.16559928940943944,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1615065213671036,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14891476646814716,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17247765873101104,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17098981730333435,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1660543667440511,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-003",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14955265288335887,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.16700541715019926,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.16559928940943944,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1615065213671036,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14891476646814716,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17247765873101104,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17098981730333435,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1660543667440511,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-004",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14955265288335887,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1467845108616826,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.14473238977626313,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1379635611655921,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12241877174342043,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17965451243383826,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17766797539022083,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17080599878837413,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-005",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14403556122718678,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1467845108616826,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.14473238977626313,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1379635611655921,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12241877174342043,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.17965451243383826,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17766797539022083,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.17080599878837413,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-006",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14403556122718678,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.14050733688215505,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.13888207595746976,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.13429718582068575,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12226003399591853,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1718384821438174,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.17037560622202663,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.16571099840027367,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-007",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.14930651202719306,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.15966101831226007,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1589850338103971,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.15743924563611883,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15192467066836607,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1532729819965812,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.15257600530841467,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1501113261111094,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-008",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1431726461156382,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1621983657072304,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.16154476366269982,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.16000563341785026,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.15453943955638466,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.14848103859355466,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1475523418295777,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.14440926138219312,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-009",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.13599841940215263,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11428743059797335,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11133196044586688,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1093112586061616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10544791046946358,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.0515956955518465,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.05120168370306579,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.050364343858522995,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-010",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04667600280093366,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11428743059797335,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11133196044586688,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1093112586061616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10544791046946358,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.0515956955518465,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.05120168370306579,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.050364343858522995,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-011",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04667600280093366,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.1405403678883551,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.13606382123825253,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1290863241427823,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.1136165807113277,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.04272171863680695,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.042028811958521914,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.04043623459605335,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f5-012",
+        "family": 5,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.034816423542415265,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07953325250810188,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.07770343703770341,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07224599614622948,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.05835807131851967,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.018499763025638584,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.018254815376237635,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.017466517770471205,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-001",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.014199111364887586,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.10791874577717804,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.10752852206646515,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10616226214887577,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10239108130027219,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.039245260498733885,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03918015819832548,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03898236691867561,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-002",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03829016787468649,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07933293614347503,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.07750963003727683,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07200203029209624,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.0577066074543754,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.018517477223062843,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.01827621500829048,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.017467862877293714,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-003",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.014529810149219467,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.11477967548889285,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.11440474968833034,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.11310139779082132,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.10902642570490155,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.04213086610407078,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.04209494109697194,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.04194474679777264,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-004",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.04102784672547365,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.07938067252211206,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.07761506019652982,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07205579262370305,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.057513963111914417,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.018514103023508602,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.018246652353194497,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.017499992371674676,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-005",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.014273528180952785,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.10244772539679181,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.10203748476742892,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.10052410820530161,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.09633578977004856,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.03668336317278636,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.03658185465803654,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.03642610964047168,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-006",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.03568196483349936,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.09198573639166716,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.08654912103787393,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07799628777377136,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.06346724950381613,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.026178745015548198,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.024920888111670987,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.022983500053808104,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-007",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.019055398349167647,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.139350372304013,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.1370639505837245,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1335430556183083,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12432231608153381,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.006938675035159004,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.006788581528156227,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.006583811669785836,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-008",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.006027263729881571,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.09263978196457234,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.08721569582569187,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07821609890052066,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.06357364177530243,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.02608858550492422,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.02486086276318838,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.02287973822601466,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-009",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.01912432149843304,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.14519642688979176,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.14303504199644645,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.13804938131017838,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12553811721179747,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.007221963441375675,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.007097825560404592,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.0068950376250355395,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-010",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.006403894752374322,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.09136500408319488,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.0859387654082192,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.07802342161804783,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.06308797925576036,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.026095492559840804,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.024864836032294616,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.022910617786622185,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-011",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.018988474845034103,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.13356234037919532,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.131164449201826,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.1274577675417555,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "log",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.12059622341007702,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 240,
+        "min_pairwise_rms": 0.006522658057585644,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 120,
+        "min_pairwise_rms": 0.006363576723735545,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 60,
+        "min_pairwise_rms": 0.006107177791196501,
+        "exact_collision": false
+      },
+      {
+        "id": "dev-f6-012",
+        "family": 6,
+        "mode": "linear",
+        "side_pixels": 30,
+        "min_pairwise_rms": 0.005593488338649586,
+        "exact_collision": false
+      }
+    ],
+    "margin_caveat": "0.02 is descriptive, not a human or model perception threshold. 240px reproduces option quantization and nearest resize; smaller sizes use area averaging followed by 8-bit requantization."
+  },
+  "scalars": {
+    "linear_8bit_dark_threshold": 0.00196078431372549,
+    "log_8bit_dark_threshold": 1.3650412495530856e-05,
+    "log_derivative_at_zero": 144.62006247378287,
+    "log_derivative_at_one": 0.14462006247378287,
+    "wilson_95_half_width_at_observed_50pct": {
+      "10": 0.263406909487436,
+      "80": 0.10702584913880281,
+      "100": 0.09616846963400436
+    },
+    "note": "Thresholds are the transition from code 0 to 1 under nearest rounding, before any resize. Wilson widths are descriptive, not a power analysis."
+  },
+  "central_curvature": {
+    "aperture": "16 by 72 slit rotated 25 degrees; same cell averaged raster as simulator",
+    "amplitude_weighted_covariance": [
+      [
+        94.78908538570039,
+        -157.32364109797115
+      ],
+      [
+        -157.32364109797115,
+        358.75946620375396
+      ]
+    ],
+    "predicted_intensity_hessian": [
+      [
+        -7484.246194383548,
+        12421.776804607509
+      ],
+      [
+        12421.776804607509,
+        -28326.512052616312
+      ]
+    ],
+    "direct_dtft_finite_difference_errors": [
+      {
+        "frequency_step": 0.001,
+        "relative_frobenius_error": 0.00870752804070968
+      },
+      {
+        "frequency_step": 0.0005,
+        "relative_frobenius_error": 0.0021861331882141537
+      },
+      {
+        "frequency_step": 0.00025,
+        "relative_frobenius_error": 0.0005471136761819783
+      },
+      {
+        "frequency_step": 0.000125,
+        "relative_frobenius_error": 0.000136814727088794
+      }
+    ],
+    "scope": "Identity for the discrete raster measure. This checks an independent direct sum, not another FFT."
+  },
+  "source_sha256": {
+    "research/math_audit.py": "8b89b904e5935395bf67c6fb7b9ddb7bccfa180b1de2bd431545a359efcb756a",
+    "research/build_report.py": "9424d375f8ed5dd8647893c27ab52d6867280d95739b30c7c5a012d8b8ff1ce4",
+    "research/report.md.in": "7441180eacb4b56503eb9cf32a092ae187e77cf641ff5718d7b823954300c5fb",
+    "run-research.cmd": "e5f907cb0ad23a277f27c5b2fceb2783552b41d07e870001a87b2ab0cda9fa88",
+    "requirements.txt": "172e9ac1e2fee27cbad9a1ac0d62b903960e8c86e287f1c8f9851def49c70afd",
+    "fourierbench/optics.py": "3fb091676da9384b13fa1f255dacfc54ebf528bbf04d06ff817387cb9b1a7c27",
+    "fourierbench/items.py": "1de4a415194cc13d25c7a65d0d9d562e7d36d9bf14955d7cbfa12fa6238ec00e",
+    "fourierbench/render.py": "d869a6b6d102a233dd2c5c3370c2f2d611d4460b5d6c1c7f85e2d9807dd251bb"
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "passed": true,
+  "counts": {
+    "1": 12,
+    "2": 12,
+    "3": 12,
+    "4": 12,
+    "5": 12,
+    "6": 12
+  },
+  "items": [
+    {
+      "id": "dev-f1-001",
+      "min_pairwise_log_rms": 0.09505294496014247,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-001",
+      "min_pairwise_log_rms": 0.1306162231027609,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-002",
+      "min_pairwise_log_rms": 0.13690214786028873,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-002",
+      "min_pairwise_log_rms": 0.15520483776824312,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-003",
+      "min_pairwise_log_rms": 0.16378496236534262,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-003",
+      "min_pairwise_log_rms": 0.11771528285393877,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-004",
+      "min_pairwise_log_rms": 0.1110275936515682,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-004",
+      "min_pairwise_log_rms": 0.1523837392983579,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-005",
+      "min_pairwise_log_rms": 0.16978461557468644,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-005",
+      "min_pairwise_log_rms": 0.20375316032345822,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-006",
+      "min_pairwise_log_rms": 0.17182943240183163,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-006",
+      "min_pairwise_log_rms": 0.1593150971642732,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-007",
+      "min_pairwise_log_rms": 0.19895081568553902,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-007",
+      "min_pairwise_log_rms": 0.1814077107723629,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-008",
+      "min_pairwise_log_rms": 0.19688198235365093,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-008",
+      "min_pairwise_log_rms": 0.1583892188242525,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-009",
+      "min_pairwise_log_rms": 0.1822911479571262,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-009",
+      "min_pairwise_log_rms": 0.2157861865773614,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-010",
+      "min_pairwise_log_rms": 0.18707340170057607,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-010",
+      "min_pairwise_log_rms": 0.13893067473090634,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-011",
+      "min_pairwise_log_rms": 0.19549309788215471,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-011",
+      "min_pairwise_log_rms": 0.19489321314268454,
+      "passed": true
+    },
+    {
+      "id": "dev-f1-012",
+      "min_pairwise_log_rms": 0.15533801859653096,
+      "passed": true
+    },
+    {
+      "id": "dev-f2-012",
+      "min_pairwise_log_rms": 0.2155714868555104,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-001",
+      "min_pairwise_log_rms": 0.13079648578980838,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-002",
+      "min_pairwise_log_rms": 0.11834384190973354,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-003",
+      "min_pairwise_log_rms": 0.11004930433838712,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-004",
+      "min_pairwise_log_rms": 0.1098522816919001,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-005",
+      "min_pairwise_log_rms": 0.14005328822830299,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-006",
+      "min_pairwise_log_rms": 0.14885273442298882,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-007",
+      "min_pairwise_log_rms": 0.1580035943419375,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-008",
+      "min_pairwise_log_rms": 0.1276832401378639,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-009",
+      "min_pairwise_log_rms": 0.11982717864356522,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-010",
+      "min_pairwise_log_rms": 0.12134348346970453,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-011",
+      "min_pairwise_log_rms": 0.11318013526278586,
+      "passed": true
+    },
+    {
+      "id": "dev-f3-012",
+      "min_pairwise_log_rms": 0.10591996581447487,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-001",
+      "min_pairwise_log_rms": 0.09453371966877845,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-002",
+      "min_pairwise_log_rms": 0.09030714663933839,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-003",
+      "min_pairwise_log_rms": 0.0829068607361493,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-004",
+      "min_pairwise_log_rms": 0.08135779943362352,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-005",
+      "min_pairwise_log_rms": 0.06579166422402398,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-006",
+      "min_pairwise_log_rms": 0.07199969079966687,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-007",
+      "min_pairwise_log_rms": 0.0713319129436156,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-008",
+      "min_pairwise_log_rms": 0.0762233645538877,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-009",
+      "min_pairwise_log_rms": 0.06904599113815983,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-010",
+      "min_pairwise_log_rms": 0.07055710733794865,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-011",
+      "min_pairwise_log_rms": 0.06663744472938977,
+      "passed": true
+    },
+    {
+      "id": "dev-f4-012",
+      "min_pairwise_log_rms": 0.0836978061467679,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-001",
+      "min_pairwise_log_rms": 0.17506642454478874,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-002",
+      "min_pairwise_log_rms": 0.17506642454478874,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-003",
+      "min_pairwise_log_rms": 0.16809101756590256,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-004",
+      "min_pairwise_log_rms": 0.16809101756590256,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-005",
+      "min_pairwise_log_rms": 0.14724635469904485,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-006",
+      "min_pairwise_log_rms": 0.14724635469904485,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-007",
+      "min_pairwise_log_rms": 0.14132333125277752,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-008",
+      "min_pairwise_log_rms": 0.16102750749135808,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-009",
+      "min_pairwise_log_rms": 0.1635590211819278,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-010",
+      "min_pairwise_log_rms": 0.1146000860408893,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-011",
+      "min_pairwise_log_rms": 0.1146000860408893,
+      "passed": true
+    },
+    {
+      "id": "dev-f5-012",
+      "min_pairwise_log_rms": 0.1402759818791363,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-001",
+      "min_pairwise_log_rms": 0.07953561863719408,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-002",
+      "min_pairwise_log_rms": 0.10789870042955348,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-003",
+      "min_pairwise_log_rms": 0.07946571457425063,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-004",
+      "min_pairwise_log_rms": 0.11476584024363909,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-005",
+      "min_pairwise_log_rms": 0.0793465731964829,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-006",
+      "min_pairwise_log_rms": 0.10242075165338779,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-007",
+      "min_pairwise_log_rms": 0.09199551638931551,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-008",
+      "min_pairwise_log_rms": 0.1393992395936908,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-009",
+      "min_pairwise_log_rms": 0.09266190422091278,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-010",
+      "min_pairwise_log_rms": 0.14516270647035073,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-011",
+      "min_pairwise_log_rms": 0.09128063987859261,
+      "passed": true
+    },
+    {
+      "id": "dev-f6-012",
+      "min_pairwise_log_rms": 0.13355526900862827,
+      "passed": true
+    }
+  ],
+  "note": "Numerical distinctness is not a model visibility test; visual review and model controls remain required."
+}

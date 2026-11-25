@@ -1,0 +1,1620 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fourier optics | Gate 1 review</title><style>
+body{background:#f5f3ed;color:#152e35;font:17px/1.55 system-ui,sans-serif;margin:0 auto;padding:28px;max-width:1440px}
+h1{font-size:clamp(30px,4vw,52px);line-height:1.1;margin-bottom:12px}h2{margin-top:48px;border-top:3px solid #136d73;padding-top:20px}
+a{color:#116c76}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,570px),1fr));gap:24px}
+article{background:white;border:1px solid #cbd7d4;padding:12px}img{width:100%;height:auto}article p{margin:10px 0}
+pre{white-space:pre-wrap;font-size:13px}summary{cursor:pointer}.status{background:#deebe5;padding:18px;border-left:5px solid #136d73}
+nav{padding:18px 0}.intro{max-width:1000px}details{border-top:1px solid #ddd;padding-top:8px}</style>
+<h1>What does the Fourier transform look like?</h1><p>Gate 1 · 72 development items · 12 per family · no model evaluations</p>
+<div class="status"><b>44 simulator checks passed.</b> Numerical option distinctness passed for all 72 items.
+This is a physics and presentation review, not a benchmark result.</div>
+<div class="intro"><p>Intensity display: g=log10(1+999 I/Imax)/3; each full plane is normalized to its own peak before cropping. Source and mask panels show linear amplitude transmission (white=1). Source/output field: 192 units across; frequency field: [-0.125,0.125) cycles/unit on both axes. Coordinates: x right, y down. All panels in the same plane share a scale.</p>
+<p>For complementary screens, DC is hidden and only native Fourier samples are displayed; their non-DC maximum sets the brightness.
+The equality does not hold at arbitrary frequencies between those samples. The 4f relay's overall inversion is removed by coordinate registration.</p>
+<p>Review the answer hidden under each card, the mask orientation, field of view, distractor plausibility and visibility.
+Log and linear cards use identical geometry, answer order and sampling. Numerical distinctness is not evidence that a model can distinguish the options.</p>
+<p><a href="validation.png">Validation table</a> · <a href="manifest.json">Item manifest / answer key</a> ·
+<a href="audit.json">Item audit</a> · <a href="provenance.json">Build provenance</a></p></div>
+<nav><a href="#f1">1. Aperture to pattern</a> · <a href="#f2">2. Pattern to aperture</a> · <a href="#f3">3. Scale, rotation and shift</a> · <a href="#f4">4. Slits and gratings</a> · <a href="#f5">5. Fourier-plane filtering</a> · <a href="#f6">6. Symmetry and complements</a></nav><section id="f1"><h2>1. Aperture to pattern</h2>
+<p>Contact sheets: <a href="family-1-log.png">log display</a> · <a href="family-1-linear.png">linear control</a></p>
+<div class="grid"><article>
+<a href="items/dev-f1-001-log.png"><img loading="lazy" src="items/dev-f1-001-log.png" alt="dev-f1-001 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-001-log.png">Full-size log card</a> · <a href="items/dev-f1-001-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;circle&quot;,
+    &quot;radius&quot;: 25
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-002-log.png"><img loading="lazy" src="items/dev-f1-002-log.png" alt="dev-f1-002 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-002-log.png">Full-size log card</a> · <a href="items/dev-f1-002-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;square&quot;,
+    &quot;width&quot;: 47
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-003-log.png"><img loading="lazy" src="items/dev-f1-003-log.png" alt="dev-f1-003 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-003-log.png">Full-size log card</a> · <a href="items/dev-f1-003-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: B.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 11,
+    &quot;height&quot;: 91,
+    &quot;angle&quot;: 18
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    1,
+    2,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-004-log.png"><img loading="lazy" src="items/dev-f1-004-log.png" alt="dev-f1-004 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-004-log.png">Full-size log card</a> · <a href="items/dev-f1-004-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: A.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 68,
+    &quot;angle&quot;: 12
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    0,
+    2,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-005-log.png"><img loading="lazy" src="items/dev-f1-005-log.png" alt="dev-f1-005 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-005-log.png">Full-size log card</a> · <a href="items/dev-f1-005-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;ring&quot;,
+    &quot;radius&quot;: 33,
+    &quot;inner&quot;: 24
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-006-log.png"><img loading="lazy" src="items/dev-f1-006-log.png" alt="dev-f1-006 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-006-log.png">Full-size log card</a> · <a href="items/dev-f1-006-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -28,
+        0
+      ],
+      [
+        28,
+        0
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;circle&quot;,
+      &quot;radius&quot;: 14
+    }
+  },
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-007-log.png"><img loading="lazy" src="items/dev-f1-007-log.png" alt="dev-f1-007 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-007-log.png">Full-size log card</a> · <a href="items/dev-f1-007-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: A.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -25,
+        -25
+      ],
+      [
+        25,
+        -25
+      ],
+      [
+        -25,
+        25
+      ],
+      [
+        25,
+        25
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;circle&quot;,
+      &quot;radius&quot;: 11
+    }
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    3,
+    0,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-008-log.png"><img loading="lazy" src="items/dev-f1-008-log.png" alt="dev-f1-008 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-008-log.png">Full-size log card</a> · <a href="items/dev-f1-008-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: D.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -28,
+        -12
+      ],
+      [
+        28,
+        12
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;square&quot;,
+      &quot;width&quot;: 23
+    }
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-009-log.png"><img loading="lazy" src="items/dev-f1-009-log.png" alt="dev-f1-009 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-009-log.png">Full-size log card</a> · <a href="items/dev-f1-009-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 78,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 38,
+    &quot;angle&quot;: 35
+  },
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-010-log.png"><img loading="lazy" src="items/dev-f1-010-log.png" alt="dev-f1-010 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-010-log.png">Full-size log card</a> · <a href="items/dev-f1-010-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -28,
+        0
+      ],
+      [
+        28,
+        0
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;triangle&quot;,
+      &quot;size&quot;: 29
+    },
+    &quot;angle&quot;: 15
+  },
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-011-log.png"><img loading="lazy" src="items/dev-f1-011-log.png" alt="dev-f1-011 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-011-log.png">Full-size log card</a> · <a href="items/dev-f1-011-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: D.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -30,
+        0
+      ],
+      [
+        30,
+        0
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;ring&quot;,
+      &quot;radius&quot;: 19,
+      &quot;inner&quot;: 12
+    }
+  },
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    3,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f1-012-log.png"><img loading="lazy" src="items/dev-f1-012-log.png" alt="dev-f1-012 Under uniform coherent illumination, which far-field intensity pattern does this aperture produce?"></a>
+<p><a href="items/dev-f1-012-log.png">Full-size log card</a> · <a href="items/dev-f1-012-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: A.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 74,
+    &quot;count&quot;: 5,
+    &quot;spacing&quot;: 23
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    0,
+    2,
+    3
+  ]
+}</pre></details></article></div></section><section id="f2"><h2>2. Pattern to aperture</h2>
+<p>Contact sheets: <a href="family-2-log.png">log display</a> · <a href="family-2-linear.png">linear control</a></p>
+<div class="grid"><article>
+<a href="items/dev-f2-001-log.png"><img loading="lazy" src="items/dev-f2-001-log.png" alt="dev-f2-001 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-001-log.png">Full-size log card</a> · <a href="items/dev-f2-001-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: B.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;circle&quot;,
+    &quot;radius&quot;: 25
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.18047011900112142,
+    0.13726414978109774,
+    0.09505294496014247
+  ],
+  &quot;shuffle_order&quot;: [
+    2,
+    1,
+    3,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-002-log.png"><img loading="lazy" src="items/dev-f2-002-log.png" alt="dev-f2-002 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-002-log.png">Full-size log card</a> · <a href="items/dev-f2-002-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;square&quot;,
+    &quot;width&quot;: 47
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.1560842995569773,
+    0.13690214786028873,
+    0.17231636859716812
+  ],
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-003-log.png"><img loading="lazy" src="items/dev-f2-003-log.png" alt="dev-f2-003 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-003-log.png">Full-size log card</a> · <a href="items/dev-f2-003-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: D.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 11,
+    &quot;height&quot;: 91,
+    &quot;angle&quot;: 18
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.1793972571355216,
+    0.17196173348388685,
+    0.16378496236534262
+  ],
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    3,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-004-log.png"><img loading="lazy" src="items/dev-f2-004-log.png" alt="dev-f2-004 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-004-log.png">Full-size log card</a> · <a href="items/dev-f2-004-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: B.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 68,
+    &quot;angle&quot;: 12
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.11744121815925025,
+    0.1110275936515682,
+    0.1513406648604953
+  ],
+  &quot;shuffle_order&quot;: [
+    2,
+    1,
+    3,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-005-log.png"><img loading="lazy" src="items/dev-f2-005-log.png" alt="dev-f2-005 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-005-log.png">Full-size log card</a> · <a href="items/dev-f2-005-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: D.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;ring&quot;,
+    &quot;radius&quot;: 33,
+    &quot;inner&quot;: 24
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.17501514765992604,
+    0.22465797544004176,
+    0.16978461557468644
+  ],
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-006-log.png"><img loading="lazy" src="items/dev-f2-006-log.png" alt="dev-f2-006 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-006-log.png">Full-size log card</a> · <a href="items/dev-f2-006-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: D.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -28,
+        0
+      ],
+      [
+        28,
+        0
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;circle&quot;,
+      &quot;radius&quot;: 14
+    }
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.15004193010516018,
+    0.20647843041792752,
+    0.17182943240183163
+  ],
+  &quot;shuffle_order&quot;: [
+    2,
+    3,
+    0,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-007-log.png"><img loading="lazy" src="items/dev-f2-007-log.png" alt="dev-f2-007 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-007-log.png">Full-size log card</a> · <a href="items/dev-f2-007-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: A.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -25,
+        -25
+      ],
+      [
+        25,
+        -25
+      ],
+      [
+        -25,
+        25
+      ],
+      [
+        25,
+        25
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;circle&quot;,
+      &quot;radius&quot;: 11
+    }
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.17037515624907149,
+    0.23065311283997908,
+    0.19895081568553902
+  ],
+  &quot;shuffle_order&quot;: [
+    1,
+    0,
+    2,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-008-log.png"><img loading="lazy" src="items/dev-f2-008-log.png" alt="dev-f2-008 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-008-log.png">Full-size log card</a> · <a href="items/dev-f2-008-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: A.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -28,
+        -12
+      ],
+      [
+        28,
+        12
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;square&quot;,
+      &quot;width&quot;: 23
+    }
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.18214197062934562,
+    0.2285063486397635,
+    0.19688198235365093
+  ],
+  &quot;shuffle_order&quot;: [
+    1,
+    0,
+    3,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-009-log.png"><img loading="lazy" src="items/dev-f2-009-log.png" alt="dev-f2-009 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-009-log.png">Full-size log card</a> · <a href="items/dev-f2-009-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: B.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 78,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 38,
+    &quot;angle&quot;: 35
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.16972476697859762,
+    0.19260486665906856,
+    0.1822911479571262
+  ],
+  &quot;shuffle_order&quot;: [
+    3,
+    1,
+    0,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-010-log.png"><img loading="lazy" src="items/dev-f2-010-log.png" alt="dev-f2-010 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-010-log.png">Full-size log card</a> · <a href="items/dev-f2-010-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: D.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -28,
+        0
+      ],
+      [
+        28,
+        0
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;triangle&quot;,
+      &quot;size&quot;: 29
+    },
+    &quot;angle&quot;: 15
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.24664984578388074,
+    0.23740426072286958,
+    0.19395599440352346
+  ],
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-011-log.png"><img loading="lazy" src="items/dev-f2-011-log.png" alt="dev-f2-011 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-011-log.png">Full-size log card</a> · <a href="items/dev-f2-011-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: C.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;array&quot;,
+    &quot;centres&quot;: [
+      [
+        -30,
+        0
+      ],
+      [
+        30,
+        0
+      ]
+    ],
+    &quot;element&quot;: {
+      &quot;kind&quot;: &quot;ring&quot;,
+      &quot;radius&quot;: 19,
+      &quot;inner&quot;: 12
+    }
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.19206465073712134,
+    0.2648410850447395,
+    0.19549309788215471
+  ],
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f2-012-log.png"><img loading="lazy" src="items/dev-f2-012-log.png" alt="dev-f2-012 Which of these candidate amplitude apertures produces the shown far-field intensity pattern?"></a>
+<p><a href="items/dev-f2-012-log.png">Full-size log card</a> · <a href="items/dev-f2-012-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: B.</p><pre>{
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 74,
+    &quot;count&quot;: 5,
+    &quot;spacing&quot;: 23
+  },
+  &quot;inverse_candidate_spectrum_rms&quot;: [
+    0.1696179080563612,
+    0.15533801859653096,
+    0.1783510415266078
+  ],
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    2,
+    3
+  ]
+}</pre></details></article></div></section><section id="f3"><h2>3. Scale, rotation and shift</h2>
+<p>Contact sheets: <a href="family-3-log.png">log display</a> · <a href="family-3-linear.png">linear control</a></p>
+<div class="grid"><article>
+<a href="items/dev-f3-001-log.png"><img loading="lazy" src="items/dev-f3-001-log.png" alt="dev-f3-001 The original aperture and pattern are shown. Scale both aperture dimensions by 1.5, keeping its centre fixed. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-001-log.png">Full-size log card</a> · <a href="items/dev-f3-001-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 16,
+    &quot;height&quot;: 60,
+    &quot;angle&quot;: 10
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 24.0,
+    &quot;height&quot;: 90.0,
+    &quot;angle&quot;: 10
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;scale&quot;,
+    &quot;factor&quot;: 1.5
+  },
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-002-log.png"><img loading="lazy" src="items/dev-f3-002-log.png" alt="dev-f3-002 The original aperture and pattern are shown. Scale both aperture dimensions by 0.7, keeping its centre fixed. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-002-log.png">Full-size log card</a> · <a href="items/dev-f3-002-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 18,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 15
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 12.6,
+    &quot;height&quot;: 44.8,
+    &quot;angle&quot;: 15
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;scale&quot;,
+    &quot;factor&quot;: 0.7
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    0,
+    2,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-003-log.png"><img loading="lazy" src="items/dev-f3-003-log.png" alt="dev-f3-003 The original aperture and pattern are shown. Scale both aperture dimensions by 1.4, keeping its centre fixed. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-003-log.png">Full-size log card</a> · <a href="items/dev-f3-003-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 20,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 20
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 28.0,
+    &quot;height&quot;: 95.19999999999999,
+    &quot;angle&quot;: 20
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;scale&quot;,
+    &quot;factor&quot;: 1.4
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    2,
+    3,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-004-log.png"><img loading="lazy" src="items/dev-f3-004-log.png" alt="dev-f3-004 The original aperture and pattern are shown. Scale both aperture dimensions by 0.75, keeping its centre fixed. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-004-log.png">Full-size log card</a> · <a href="items/dev-f3-004-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 22,
+    &quot;height&quot;: 60,
+    &quot;angle&quot;: 25
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 16.5,
+    &quot;height&quot;: 45.0,
+    &quot;angle&quot;: 25
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;scale&quot;,
+    &quot;factor&quot;: 0.75
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    3,
+    0,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-005-log.png"><img loading="lazy" src="items/dev-f3-005-log.png" alt="dev-f3-005 The original aperture and pattern are shown. Rotate the aperture 30 degrees clockwise about its centre. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-005-log.png">Full-size log card</a> · <a href="items/dev-f3-005-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 16,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 10
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 16,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 40
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;rotation&quot;,
+    &quot;clockwise_degrees&quot;: 30
+  },
+  &quot;shuffle_order&quot;: [
+    2,
+    3,
+    0,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-006-log.png"><img loading="lazy" src="items/dev-f3-006-log.png" alt="dev-f3-006 The original aperture and pattern are shown. Rotate the aperture 45 degrees clockwise about its centre. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-006-log.png">Full-size log card</a> · <a href="items/dev-f3-006-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 18,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 15
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 18,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 60
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;rotation&quot;,
+    &quot;clockwise_degrees&quot;: 45
+  },
+  &quot;shuffle_order&quot;: [
+    1,
+    0,
+    2,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-007-log.png"><img loading="lazy" src="items/dev-f3-007-log.png" alt="dev-f3-007 The original aperture and pattern are shown. Rotate the aperture 60 degrees clockwise about its centre. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-007-log.png">Full-size log card</a> · <a href="items/dev-f3-007-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 20,
+    &quot;height&quot;: 60,
+    &quot;angle&quot;: 20
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 20,
+    &quot;height&quot;: 60,
+    &quot;angle&quot;: 80
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;rotation&quot;,
+    &quot;clockwise_degrees&quot;: 60
+  },
+  &quot;shuffle_order&quot;: [
+    2,
+    3,
+    0,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-008-log.png"><img loading="lazy" src="items/dev-f3-008-log.png" alt="dev-f3-008 The original aperture and pattern are shown. Rotate the aperture 90 degrees clockwise about its centre. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-008-log.png">Full-size log card</a> · <a href="items/dev-f3-008-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 22,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 25
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 22,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 115
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;rotation&quot;,
+    &quot;clockwise_degrees&quot;: 90
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-009-log.png"><img loading="lazy" src="items/dev-f3-009-log.png" alt="dev-f3-009 The original aperture and pattern are shown. Translate the aperture by (12, 8) source units, without clipping it. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-009-log.png">Full-size log card</a> · <a href="items/dev-f3-009-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 16,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 10
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 16,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 10,
+    &quot;shift_x&quot;: 12,
+    &quot;shift_y&quot;: 8
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;translation&quot;,
+    &quot;x&quot;: 12,
+    &quot;y&quot;: 8
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-010-log.png"><img loading="lazy" src="items/dev-f3-010-log.png" alt="dev-f3-010 The original aperture and pattern are shown. Translate the aperture by (15, 4) source units, without clipping it. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-010-log.png">Full-size log card</a> · <a href="items/dev-f3-010-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 18,
+    &quot;height&quot;: 60,
+    &quot;angle&quot;: 15
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 18,
+    &quot;height&quot;: 60,
+    &quot;angle&quot;: 15,
+    &quot;shift_x&quot;: 15,
+    &quot;shift_y&quot;: 4
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;translation&quot;,
+    &quot;x&quot;: 15,
+    &quot;y&quot;: 4
+  },
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-011-log.png"><img loading="lazy" src="items/dev-f3-011-log.png" alt="dev-f3-011 The original aperture and pattern are shown. Translate the aperture by (18, 0) source units, without clipping it. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-011-log.png">Full-size log card</a> · <a href="items/dev-f3-011-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 20,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 20
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 20,
+    &quot;height&quot;: 64,
+    &quot;angle&quot;: 20,
+    &quot;shift_x&quot;: 18,
+    &quot;shift_y&quot;: 0
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;translation&quot;,
+    &quot;x&quot;: 18,
+    &quot;y&quot;: 0
+  },
+  &quot;shuffle_order&quot;: [
+    3,
+    2,
+    0,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f3-012-log.png"><img loading="lazy" src="items/dev-f3-012-log.png" alt="dev-f3-012 The original aperture and pattern are shown. Translate the aperture by (21, -4) source units, without clipping it. Which intensity pattern results?"></a>
+<p><a href="items/dev-f3-012-log.png">Full-size log card</a> · <a href="items/dev-f3-012-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 22,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 25
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slit&quot;,
+    &quot;width&quot;: 22,
+    &quot;height&quot;: 68,
+    &quot;angle&quot;: 25,
+    &quot;shift_x&quot;: 21,
+    &quot;shift_y&quot;: -4
+  },
+  &quot;operation&quot;: {
+    &quot;type&quot;: &quot;translation&quot;,
+    &quot;x&quot;: 21,
+    &quot;y&quot;: -4
+  },
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article></div></section><section id="f4"><h2>4. Slits and gratings</h2>
+<p>Contact sheets: <a href="family-4-log.png">log display</a> · <a href="family-4-linear.png">linear control</a></p>
+<div class="grid"><article>
+<a href="items/dev-f4-001-log.png"><img loading="lazy" src="items/dev-f4-001-log.png" alt="dev-f4-001 The original grating and pattern are shown. Increase centre-to-centre spacing from 25 to 40; keep slit width and count fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-001-log.png">Full-size log card</a> · <a href="items/dev-f4-001-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 25
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 40.0
+  },
+  &quot;concept&quot;: &quot;spacing_vs_fringe_period&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    2,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-002-log.png"><img loading="lazy" src="items/dev-f4-002-log.png" alt="dev-f4-002 The original grating and pattern are shown. Increase centre-to-centre spacing from 27 to 43.2; keep slit width and count fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-002-log.png">Full-size log card</a> · <a href="items/dev-f4-002-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 27
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 43.2
+  },
+  &quot;concept&quot;: &quot;spacing_vs_fringe_period&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    1,
+    0,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-003-log.png"><img loading="lazy" src="items/dev-f4-003-log.png" alt="dev-f4-003 The original grating and pattern are shown. Increase centre-to-centre spacing from 29 to 46.4; keep slit width and count fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-003-log.png">Full-size log card</a> · <a href="items/dev-f4-003-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 29
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 46.400000000000006
+  },
+  &quot;concept&quot;: &quot;spacing_vs_fringe_period&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-004-log.png"><img loading="lazy" src="items/dev-f4-004-log.png" alt="dev-f4-004 The original grating and pattern are shown. Increase centre-to-centre spacing from 31 to 49.6; keep slit width and count fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-004-log.png">Full-size log card</a> · <a href="items/dev-f4-004-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 31
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 49.6
+  },
+  &quot;concept&quot;: &quot;spacing_vs_fringe_period&quot;,
+  &quot;shuffle_order&quot;: [
+    3,
+    2,
+    1,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-005-log.png"><img loading="lazy" src="items/dev-f4-005-log.png" alt="dev-f4-005 The original grating and pattern are shown. Increase the number of slits from 2 to 4; keep slit width and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-005-log.png">Full-size log card</a> · <a href="items/dev-f4-005-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 25
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 4,
+    &quot;spacing&quot;: 25
+  },
+  &quot;concept&quot;: &quot;count_vs_fringe_sharpness&quot;,
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-006-log.png"><img loading="lazy" src="items/dev-f4-006-log.png" alt="dev-f4-006 The original grating and pattern are shown. Increase the number of slits from 2 to 5; keep slit width and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-006-log.png">Full-size log card</a> · <a href="items/dev-f4-006-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 27
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 5,
+    &quot;spacing&quot;: 27
+  },
+  &quot;concept&quot;: &quot;count_vs_fringe_sharpness&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    3,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-007-log.png"><img loading="lazy" src="items/dev-f4-007-log.png" alt="dev-f4-007 The original grating and pattern are shown. Increase the number of slits from 2 to 4; keep slit width and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-007-log.png">Full-size log card</a> · <a href="items/dev-f4-007-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 29
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 4,
+    &quot;spacing&quot;: 29
+  },
+  &quot;concept&quot;: &quot;count_vs_fringe_sharpness&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    3,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-008-log.png"><img loading="lazy" src="items/dev-f4-008-log.png" alt="dev-f4-008 The original grating and pattern are shown. Increase the number of slits from 2 to 5; keep slit width and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-008-log.png">Full-size log card</a> · <a href="items/dev-f4-008-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 31
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 5,
+    &quot;spacing&quot;: 31
+  },
+  &quot;concept&quot;: &quot;count_vs_fringe_sharpness&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    3,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-009-log.png"><img loading="lazy" src="items/dev-f4-009-log.png" alt="dev-f4-009 The original grating and pattern are shown. Increase slit width from 9 to 16.2; keep slit count and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-009-log.png">Full-size log card</a> · <a href="items/dev-f4-009-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 25
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 16.2,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 25
+  },
+  &quot;concept&quot;: &quot;width_vs_envelope&quot;,
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    1,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-010-log.png"><img loading="lazy" src="items/dev-f4-010-log.png" alt="dev-f4-010 The original grating and pattern are shown. Increase slit width from 7 to 12.6; keep slit count and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-010-log.png">Full-size log card</a> · <a href="items/dev-f4-010-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 7,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 27
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 12.6,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 27
+  },
+  &quot;concept&quot;: &quot;width_vs_envelope&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-011-log.png"><img loading="lazy" src="items/dev-f4-011-log.png" alt="dev-f4-011 The original grating and pattern are shown. Increase slit width from 8 to 14.4; keep slit count and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-011-log.png">Full-size log card</a> · <a href="items/dev-f4-011-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 8,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 29
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 14.4,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 29
+  },
+  &quot;concept&quot;: &quot;width_vs_envelope&quot;,
+  &quot;shuffle_order&quot;: [
+    1,
+    2,
+    3,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f4-012-log.png"><img loading="lazy" src="items/dev-f4-012-log.png" alt="dev-f4-012 The original grating and pattern are shown. Increase slit width from 9 to 16.2; keep slit count and centre spacing fixed. Choose the new far-field pattern."></a>
+<p><a href="items/dev-f4-012-log.png">Full-size log card</a> · <a href="items/dev-f4-012-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;original&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 9,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 31
+  },
+  &quot;target&quot;: {
+    &quot;kind&quot;: &quot;slits&quot;,
+    &quot;width&quot;: 16.2,
+    &quot;height&quot;: 72,
+    &quot;count&quot;: 2,
+    &quot;spacing&quot;: 31
+  },
+  &quot;concept&quot;: &quot;width_vs_envelope&quot;,
+  &quot;shuffle_order&quot;: [
+    3,
+    2,
+    0,
+    1
+  ]
+}</pre></details></article></div></section><section id="f5"><h2>5. Fourier-plane filtering</h2>
+<p>Contact sheets: <a href="family-5-log.png">log display</a> · <a href="family-5-linear.png">linear control</a></p>
+<div class="grid"><article>
+<a href="items/dev-f5-001-log.png"><img loading="lazy" src="items/dev-f5-001-log.png" alt="dev-f5-001 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-001-log.png">Full-size log card</a> · <a href="items/dev-f5-001-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: D.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 16,
+  &quot;mask&quot;: &quot;vertical_slit&quot;,
+  &quot;cutoff&quot;: 0.014,
+  &quot;offset&quot;: 0.0625,
+  &quot;classic_grid_slit&quot;: true,
+  &quot;shuffle_order&quot;: [
+    3,
+    0,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-002-log.png"><img loading="lazy" src="items/dev-f5-002-log.png" alt="dev-f5-002 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-002-log.png">Full-size log card</a> · <a href="items/dev-f5-002-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: B.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 16,
+  &quot;mask&quot;: &quot;horizontal_slit&quot;,
+  &quot;cutoff&quot;: 0.014,
+  &quot;offset&quot;: 0.0625,
+  &quot;classic_grid_slit&quot;: true,
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    2,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-003-log.png"><img loading="lazy" src="items/dev-f5-003-log.png" alt="dev-f5-003 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-003-log.png">Full-size log card</a> · <a href="items/dev-f5-003-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: D.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 20,
+  &quot;mask&quot;: &quot;vertical_slit&quot;,
+  &quot;cutoff&quot;: 0.014,
+  &quot;offset&quot;: 0.05,
+  &quot;classic_grid_slit&quot;: true,
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    2,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-004-log.png"><img loading="lazy" src="items/dev-f5-004-log.png" alt="dev-f5-004 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-004-log.png">Full-size log card</a> · <a href="items/dev-f5-004-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: A.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 20,
+  &quot;mask&quot;: &quot;horizontal_slit&quot;,
+  &quot;cutoff&quot;: 0.014,
+  &quot;offset&quot;: 0.05,
+  &quot;classic_grid_slit&quot;: true,
+  &quot;shuffle_order&quot;: [
+    1,
+    2,
+    0,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-005-log.png"><img loading="lazy" src="items/dev-f5-005-log.png" alt="dev-f5-005 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-005-log.png">Full-size log card</a> · <a href="items/dev-f5-005-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: B.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 16,
+  &quot;mask&quot;: &quot;pinhole&quot;,
+  &quot;cutoff&quot;: 0.025,
+  &quot;offset&quot;: 0.0625,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    3,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-006-log.png"><img loading="lazy" src="items/dev-f5-006-log.png" alt="dev-f5-006 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-006-log.png">Full-size log card</a> · <a href="items/dev-f5-006-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: C.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 16,
+  &quot;mask&quot;: &quot;blocked_centre&quot;,
+  &quot;cutoff&quot;: 0.025,
+  &quot;offset&quot;: 0.0625,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-007-log.png"><img loading="lazy" src="items/dev-f5-007-log.png" alt="dev-f5-007 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-007-log.png">Full-size log card</a> · <a href="items/dev-f5-007-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: C.</p><pre>{
+  &quot;input&quot;: &quot;grid&quot;,
+  &quot;period&quot;: 20,
+  &quot;mask&quot;: &quot;off_axis_hole&quot;,
+  &quot;cutoff&quot;: 0.025,
+  &quot;offset&quot;: 0.05,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-008-log.png"><img loading="lazy" src="items/dev-f5-008-log.png" alt="dev-f5-008 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-008-log.png">Full-size log card</a> · <a href="items/dev-f5-008-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: D.</p><pre>{
+  &quot;input&quot;: &quot;bars&quot;,
+  &quot;period&quot;: 20,
+  &quot;mask&quot;: &quot;vertical_slit&quot;,
+  &quot;cutoff&quot;: 0.014,
+  &quot;offset&quot;: 0.05,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    3,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-009-log.png"><img loading="lazy" src="items/dev-f5-009-log.png" alt="dev-f5-009 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-009-log.png">Full-size log card</a> · <a href="items/dev-f5-009-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: D.</p><pre>{
+  &quot;input&quot;: &quot;bars&quot;,
+  &quot;period&quot;: 16,
+  &quot;mask&quot;: &quot;horizontal_slit&quot;,
+  &quot;cutoff&quot;: 0.014,
+  &quot;offset&quot;: 0.0625,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    3,
+    2,
+    0,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-010-log.png"><img loading="lazy" src="items/dev-f5-010-log.png" alt="dev-f5-010 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-010-log.png">Full-size log card</a> · <a href="items/dev-f5-010-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: A.</p><pre>{
+  &quot;input&quot;: &quot;shapes&quot;,
+  &quot;period&quot;: 16,
+  &quot;mask&quot;: &quot;pinhole&quot;,
+  &quot;cutoff&quot;: 0.025,
+  &quot;offset&quot;: 0.0625,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    1,
+    3,
+    0,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-011-log.png"><img loading="lazy" src="items/dev-f5-011-log.png" alt="dev-f5-011 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-011-log.png">Full-size log card</a> · <a href="items/dev-f5-011-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>D</b>. Look-alike foil: B.</p><pre>{
+  &quot;input&quot;: &quot;shapes&quot;,
+  &quot;period&quot;: 20,
+  &quot;mask&quot;: &quot;blocked_centre&quot;,
+  &quot;cutoff&quot;: 0.025,
+  &quot;offset&quot;: 0.05,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    2,
+    1,
+    3,
+    0
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f5-012-log.png"><img loading="lazy" src="items/dev-f5-012-log.png" alt="dev-f5-012 The input amplitude and Fourier-plane amplitude mask are shown. Which output intensity results in an ideal coherent 4f system? Output coordinates are registered to the input (the relay&#x27;s global inversion is removed)."></a>
+<p><a href="items/dev-f5-012-log.png">Full-size log card</a> · <a href="items/dev-f5-012-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: C.</p><pre>{
+  &quot;input&quot;: &quot;shapes&quot;,
+  &quot;period&quot;: 20,
+  &quot;mask&quot;: &quot;off_axis_hole&quot;,
+  &quot;cutoff&quot;: 0.025,
+  &quot;offset&quot;: 0.05,
+  &quot;classic_grid_slit&quot;: false,
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article></div></section><section id="f6"><h2>6. Symmetry and complements</h2>
+<p>Contact sheets: <a href="family-6-log.png">log display</a> · <a href="family-6-linear.png">linear control</a></p>
+<div class="grid"><article>
+<a href="items/dev-f6-001-log.png"><img loading="lazy" src="items/dev-f6-001-log.png" alt="dev-f6-001 This real amplitude aperture is not symmetric under a 180-degree rotation. Which complete far-field intensity pattern is consistent with it? The optical axis stays at the panel centre."></a>
+<p><a href="items/dev-f6-001-log.png">Full-size log card</a> · <a href="items/dev-f6-001-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;centrosymmetry&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;asymmetric&quot;,
+    &quot;angle&quot;: 9
+  },
+  &quot;exception&quot;: &quot;Includes an explicitly constructed shifted-intensity rule-violation foil, not a simulated real-aperture far field.&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    3,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-002-log.png"><img loading="lazy" src="items/dev-f6-002-log.png" alt="dev-f6-002 This real amplitude aperture is not symmetric under a 180-degree rotation. Which complete far-field intensity pattern is consistent with it? The optical axis stays at the panel centre."></a>
+<p><a href="items/dev-f6-002-log.png">Full-size log card</a> · <a href="items/dev-f6-002-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;centrosymmetry&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 58,
+    &quot;angle&quot;: 24
+  },
+  &quot;exception&quot;: &quot;Includes an explicitly constructed shifted-intensity rule-violation foil, not a simulated real-aperture far field.&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-003-log.png"><img loading="lazy" src="items/dev-f6-003-log.png" alt="dev-f6-003 This real amplitude aperture is not symmetric under a 180-degree rotation. Which complete far-field intensity pattern is consistent with it? The optical axis stays at the panel centre."></a>
+<p><a href="items/dev-f6-003-log.png">Full-size log card</a> · <a href="items/dev-f6-003-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;centrosymmetry&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;asymmetric&quot;,
+    &quot;angle&quot;: 35
+  },
+  &quot;exception&quot;: &quot;Includes an explicitly constructed shifted-intensity rule-violation foil, not a simulated real-aperture far field.&quot;,
+  &quot;shuffle_order&quot;: [
+    3,
+    1,
+    0,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-004-log.png"><img loading="lazy" src="items/dev-f6-004-log.png" alt="dev-f6-004 This real amplitude aperture is not symmetric under a 180-degree rotation. Which complete far-field intensity pattern is consistent with it? The optical axis stays at the panel centre."></a>
+<p><a href="items/dev-f6-004-log.png">Full-size log card</a> · <a href="items/dev-f6-004-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;centrosymmetry&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 54,
+    &quot;angle&quot;: 46
+  },
+  &quot;exception&quot;: &quot;Includes an explicitly constructed shifted-intensity rule-violation foil, not a simulated real-aperture far field.&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-005-log.png"><img loading="lazy" src="items/dev-f6-005-log.png" alt="dev-f6-005 This real amplitude aperture is not symmetric under a 180-degree rotation. Which complete far-field intensity pattern is consistent with it? The optical axis stays at the panel centre."></a>
+<p><a href="items/dev-f6-005-log.png">Full-size log card</a> · <a href="items/dev-f6-005-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;centrosymmetry&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;asymmetric&quot;,
+    &quot;angle&quot;: 61
+  },
+  &quot;exception&quot;: &quot;Includes an explicitly constructed shifted-intensity rule-violation foil, not a simulated real-aperture far field.&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-006-log.png"><img loading="lazy" src="items/dev-f6-006-log.png" alt="dev-f6-006 This real amplitude aperture is not symmetric under a 180-degree rotation. Which complete far-field intensity pattern is consistent with it? The optical axis stays at the panel centre."></a>
+<p><a href="items/dev-f6-006-log.png">Full-size log card</a> · <a href="items/dev-f6-006-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;centrosymmetry&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 62,
+    &quot;angle&quot;: 68
+  },
+  &quot;exception&quot;: &quot;Includes an explicitly constructed shifted-intensity rule-violation foil, not a simulated real-aperture far field.&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    1,
+    3,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-007-log.png"><img loading="lazy" src="items/dev-f6-007-log.png" alt="dev-f6-007 Choose the complementary screen&#x27;s diffraction pattern. Illumination is uniform over the displayed 192-unit square. All options show only frequency samples k/192 (repeated as pixels); DC is hidden. Normalize using the maximum over all non-DC native samples before cropping."></a>
+<p><a href="items/dev-f6-007-log.png">Full-size log card</a> · <a href="items/dev-f6-007-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;babinet_native_bins&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;asymmetric&quot;,
+    &quot;angle&quot;: 87
+  },
+  &quot;native_df&quot;: 0.005208333333333333,
+  &quot;normalization_override&quot;: &quot;maximum over all non-DC native samples&quot;,
+  &quot;shuffle_order&quot;: [
+    3,
+    1,
+    0,
+    2
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-008-log.png"><img loading="lazy" src="items/dev-f6-008-log.png" alt="dev-f6-008 Choose the complementary screen&#x27;s diffraction pattern. Illumination is uniform over the displayed 192-unit square. All options show only frequency samples k/192 (repeated as pixels); DC is hidden. Normalize using the maximum over all non-DC native samples before cropping."></a>
+<p><a href="items/dev-f6-008-log.png">Full-size log card</a> · <a href="items/dev-f6-008-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;babinet_native_bins&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 58,
+    &quot;angle&quot;: 90
+  },
+  &quot;native_df&quot;: 0.005208333333333333,
+  &quot;normalization_override&quot;: &quot;maximum over all non-DC native samples&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    3,
+    1
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-009-log.png"><img loading="lazy" src="items/dev-f6-009-log.png" alt="dev-f6-009 Choose the complementary screen&#x27;s diffraction pattern. Illumination is uniform over the displayed 192-unit square. All options show only frequency samples k/192 (repeated as pixels); DC is hidden. Normalize using the maximum over all non-DC native samples before cropping."></a>
+<p><a href="items/dev-f6-009-log.png">Full-size log card</a> · <a href="items/dev-f6-009-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>B</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;babinet_native_bins&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;asymmetric&quot;,
+    &quot;angle&quot;: 113
+  },
+  &quot;native_df&quot;: 0.005208333333333333,
+  &quot;normalization_override&quot;: &quot;maximum over all non-DC native samples&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    0,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-010-log.png"><img loading="lazy" src="items/dev-f6-010-log.png" alt="dev-f6-010 Choose the complementary screen&#x27;s diffraction pattern. Illumination is uniform over the displayed 192-unit square. All options show only frequency samples k/192 (repeated as pixels); DC is hidden. Normalize using the maximum over all non-DC native samples before cropping."></a>
+<p><a href="items/dev-f6-010-log.png">Full-size log card</a> · <a href="items/dev-f6-010-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;babinet_native_bins&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 54,
+    &quot;angle&quot;: 112
+  },
+  &quot;native_df&quot;: 0.005208333333333333,
+  &quot;normalization_override&quot;: &quot;maximum over all non-DC native samples&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    2,
+    1,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-011-log.png"><img loading="lazy" src="items/dev-f6-011-log.png" alt="dev-f6-011 Choose the complementary screen&#x27;s diffraction pattern. Illumination is uniform over the displayed 192-unit square. All options show only frequency samples k/192 (repeated as pixels); DC is hidden. Normalize using the maximum over all non-DC native samples before cropping."></a>
+<p><a href="items/dev-f6-011-log.png">Full-size log card</a> · <a href="items/dev-f6-011-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>C</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;babinet_native_bins&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;asymmetric&quot;,
+    &quot;angle&quot;: 139
+  },
+  &quot;native_df&quot;: 0.005208333333333333,
+  &quot;normalization_override&quot;: &quot;maximum over all non-DC native samples&quot;,
+  &quot;shuffle_order&quot;: [
+    2,
+    1,
+    0,
+    3
+  ]
+}</pre></details></article><article>
+<a href="items/dev-f6-012-log.png"><img loading="lazy" src="items/dev-f6-012-log.png" alt="dev-f6-012 Choose the complementary screen&#x27;s diffraction pattern. Illumination is uniform over the displayed 192-unit square. All options show only frequency samples k/192 (repeated as pixels); DC is hidden. Normalize using the maximum over all non-DC native samples before cropping."></a>
+<p><a href="items/dev-f6-012-log.png">Full-size log card</a> · <a href="items/dev-f6-012-linear.png">Linear control</a></p>
+<details><summary>Reviewer answer and provenance</summary><p>Answer: <b>A</b>. Look-alike foil: none designated.</p><pre>{
+  &quot;concept&quot;: &quot;babinet_native_bins&quot;,
+  &quot;aperture&quot;: {
+    &quot;kind&quot;: &quot;triangle&quot;,
+    &quot;size&quot;: 62,
+    &quot;angle&quot;: 134
+  },
+  &quot;native_df&quot;: 0.005208333333333333,
+  &quot;normalization_override&quot;: &quot;maximum over all non-DC native samples&quot;,
+  &quot;shuffle_order&quot;: [
+    0,
+    3,
+    1,
+    2
+  ]
+}</pre></details></article></div></section>
+<footer><p>All stimuli generated locally. No photographs, copied figures, network resources, trackers or background server.</p></footer></html>

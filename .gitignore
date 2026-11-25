@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+.env
+.env.*
+!.env.example
+reports/math-research-2026-11-18/audit-console.txt
