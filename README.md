@@ -7,6 +7,12 @@ Open [the Gate 1 review gallery](reports/gate1/index.html) in a browser. It is a
 self-contained local HTML page with 72 development examples, six family contact
 sheets, linear-display controls, and hidden reviewer answers/provenance.
 
+## License
+
+The [MIT License](LICENSE) covers original source code only. Research reports,
+review galleries, stimulus material, figures, and third-party material retain
+their applicable existing terms.
+
 ## Reproduce
 
 From this folder in PowerShell:

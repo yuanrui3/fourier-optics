@@ -1,0 +1,19 @@
+{
+  "title": "Fourier-Optics Intuition Benchmark: Gate 1",
+  "description": "<p>First archived snapshot of the Fourier-optics intuition benchmark. It includes the NumPy simulator, numerical validation, mathematical audits, and the Gate 1 review gallery with 72 development examples. This release contains numerical groundwork and review materials; no models have been evaluated.</p><p><strong>License scope:</strong> The MIT License applies only to original project source code identified in LICENSE. Research reports, stimulus text, datasets, figures, generated outputs, and third-party material are excluded from this grant and retain their applicable existing terms.</p>",
+  "version": "v0.1.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Chen, Yuanrui"
+    }
+  ],
+  "keywords": [
+    "Fourier optics",
+    "computational imaging",
+    "benchmark",
+    "numerical simulation"
+  ]
+}
